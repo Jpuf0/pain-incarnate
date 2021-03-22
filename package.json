@@ -1,0 +1,19 @@
+{
+  "name": "pain-incarnate",
+  "version": "1.0.0",
+  "description": "bot that is literally pain incarnate",
+  "main": "index.js",
+  "author": "Jpuf#0001",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^9.0.8",
+    "@types/node": "^14.14.35",
+    "eris": "^0.14.0",
+    "fs-extra": "^9.1.0",
+    "leeks.js": "^0.0.9"
+  }
+}

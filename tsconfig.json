@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "allowJs": true,
+    "target": "ESNEXT",
+    "baseUrl": "src",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "paths": {},
+    "typeRoots": [
+      "./node_modules/@types",
+      //"<@types>"
+    ],
+    "inlineSourceMap": true,
+    "charset": "UTF-8",
+    "downlevelIteration": true,
+    "newLine": "lf",
+    "strictBindCallApply": true
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "out",
+    "tmp",
+    "logs",
+    "test"
+  ]
+}
