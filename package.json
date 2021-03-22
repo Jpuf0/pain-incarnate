@@ -4,7 +4,7 @@
   "description": "bot that is literally pain incarnate",
   "main": "index.js",
   "author": "Jpuf0 <Jpuf@Jpuf.xyz> <Jpuf#0001>",
-  "license": "MIT",
+  "license": "GPLv2",
   "private": true,
   "devDependencies": {
     "typescript": "^4.2.3"
