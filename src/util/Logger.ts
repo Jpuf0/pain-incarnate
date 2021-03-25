@@ -9,7 +9,11 @@ type OmitFirstArg<F> = F extends (x: any, ...args: infer P) => infer R ? (...arg
 export default class Logger {
   private static COLORS = {
     time: leeks.colors.gray,
-    log: leeks.colors.green
+    log: leeks.colors.green,
+    info: leeks.colors.cyan,
+    warn: leeks.colors.yellowBright,
+    error: leeks.colors.redBright,
+    
   }
 
   static get log(): OmitFirstArg<typeof Logger["_log"]> {
@@ -17,6 +21,10 @@ export default class Logger {
   }
 
   static get info(): OmitFirstArg<typeof Logger["_log"]> {
+    return this._log.bind(this, "info")
+  }
+
+  static get warn(): OmitFirstArg<typeof Logger["_log"]> {
     return this._log.bind(this, "warn")
   }
 
@@ -25,11 +33,11 @@ export default class Logger {
   }
 
   static get debug(): OmitFirstArg<typeof Logger["_log"]> {
-    return this._log.bind(this, "warn")
+    return this._log.bind(this, "debug")
   }
 
   static get command(): OmitFirstArg<typeof Logger["_log"]> {
-    return this._log.bind(this, "warn")
+    return this._log.bind(this, "cmd")
   }
 
   private static _log(type: string, name: string | string[], message?: any) {

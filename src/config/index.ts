@@ -1,9 +1,7 @@
-const config = {
+export default {
   dir: {
     logs: {
       clientLogs: "logs"
     }
   }
 }
-
-export default config
